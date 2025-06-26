@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+    .ko{
+        /* background-color: white; */
+        height: 150px;
+        display: flex; 
+        gap: 50px;
+    }
+        .h1{
+            width: 100px;
+            height: 100px;
+            background-color: cadetblue;
+            animation-name: xyz;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes xyz{
+        from{
+            border-radius: 0%;
+            /* background-image: url(/image.png); */
+            /* border: 2px solid rgb(51, 214, 19); */
+        }
+        to{
+            border-radius: 50%;
+            /* background-image: url(/images.jpg); */
+            border: 2px dotted yellowgreen;
+            
+
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="ko">
+        <div class="h1"></div>  
+        <br>
+        <div class="h1"></div>  
+        <br>
+        <div class="h1"></div>  
+    </div>
+</body>
+</html>
