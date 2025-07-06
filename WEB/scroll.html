@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll background chnage with DIV</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+           font-family: 'Times New Roman', Times, serif;
+           color: brown; 
+           background-color: antiquewhite;
+        }
+        .Section{
+            height: 700px;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            text-align: center;
+        }
+        .h0{
+            background-image: url(/website_hov.html/568490.jpg);
+        }
+        .h2{
+             background-image: url(/website_hov.html/BMW.avif)
+        }
+           .h3{
+             background-image: url(/Tree.jpg)
+        }
+           .h4{
+             background-image: url(/website_hov.html/audi.jpg)
+        }
+        .content{
+            padding: 30px;
+            background-color:rgb(165, 152, 152);
+            border-radius: 50px;
+        }
+        .nav{
+            margin: 0px;
+            padding: 10px;
+            text-align: center;
+            background-color:crimson ;
+           position: fixed;
+           width: 100%;
+        }
+        .nav a{
+            margin: 100px;
+            text-decoration: none;
+            color: white;
+        }
+        .nav a:hover{
+            background-color: plum;
+        }
+    </style>
+</head>
+<body>
+        <div class="nav">
+        <a href="Home">Home</a>
+        <a href="About">About</a>
+        <a href="Contact">Contact</a>
+        </div>
+    <div class="Section h0">
+        <div class="content">
+            <h1>Hello</h1>
+            <p>Page Number 1</p>
+        </div>
+    </div>
+     <div class="Section h2">
+        <div class="content">
+            <h1>Hello</h1>
+            <p>Page Number 2</p>
+        </div>
+    </div>
+     <div class="Section h3">
+        <div class="content">
+            <h1>Hello</h1>
+            <p>Page Number 3</p>
+        </div>
+    </div>
+     <div class="Section h4">
+        <div class="content">
+            <h1>Hello</h1>
+            <p>Page Number 4</p>
+        </div>
+    </div>
+   
+</body>
+</html>
