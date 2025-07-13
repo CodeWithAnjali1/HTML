@@ -13,14 +13,47 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            background-image: url(/my_web.html/database.jpg);
+            min-height: 100vh;
+            background-attachment: fixed;
         }
+        .a1{
+            text-align: center;
+        }
+        .center{
+            margin-right: auto;
+            margin-left: auto;
+        }
+    
+        .a2{
+            display: flex;
+            gap: 20px;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .a3{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .a4{
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+       .center td{
+        padding-right: 30px;
+        padding-bottom: 10px;
+       }
     </style>
 </head>
-<body style="background-image: url(/my_web.html/database.jpg);">
+<body>
+    <div class="a1">
     <h1 style="background-color: rgba(255, 0, 0, 0.301); text-align: center;">Fill The Form To Sign-up</h1>
-    <br><h2 style=" background-color:rgb(24, 24, 172); color: white; border-radius: 50px;width: 40%;">Personal Information</h2>
+    <br><h2 style=" background-color:rgb(24, 24, 172); color: white; border-radius: 50px; width: 50%; margin-left: 25%;">Personal Information</h2>
     <form action="">
-        <table >
+        <table class="center">
         <tr>
             <td><label input="fName">First Name</label></td>
             <td><input type="text"></td>
@@ -33,35 +66,35 @@
             <td><input type="number"></td>
             <td><label input="contact">Other Contact</label></td>
             <td><input type="number"></td>
-        </tr><tr></tr><tr></tr><tr></tr>
+        </tr>
         
         <tr>
             <td><label input="Adress">Address</label></td>
             <td><input type="text"></td>
             <td><label input="code">Pin code</label></td>
             <td><input type="number"></td>
-        </tr><tr></tr><tr></tr><tr></tr>
+        </tr>
         
         <tr>
             <td><label input="email">E-mail</label></td>
             <td><input type="email"></td>
             <td><label input="password">Password</label></td>
             <td><input type="password"></td>
-        </tr><tr></tr><tr></tr><tr></tr>
+        </tr>
         
         <tr>
             <td><label input="DOB">DOB</label></td>
             <td><input type="date"></td>
-        </tr><tr></tr><tr></tr><tr></tr>
+        </tr>
         
         <tr>
             <td><label input="Gender">Gender :</label></td><br>
-        </tr><tr></tr><tr></tr><tr></tr>
+        </tr>
         
         <tr>
             <td>Female<input type="radio"></td>
             <td>Male<input type="radio"></td>
-        </tr><tr></tr><tr></tr><tr></tr>
+        </tr>
         
         <tr>
             <td><label input="city">City</label></td>
@@ -77,28 +110,41 @@
             </td>
         </tr>
 
-    </table><br>
-            <button>
-                   <a href="button.htm">Sign-up</a>
-            </button><br><br>
-
-            <table>
-                <h2 style=" background-color:rgb(24, 24, 172); color: white; border-radius: 50px;width: 40%;">Car Information</h2>
-                <tr><tr></tr><tr></tr><tr></tr>
+    </table>
+    <div>
+        <br>
+          <h2 style=" background-color:rgb(24, 24, 172); color: white; border-radius: 50px; width: 50%;  margin-left: 25%;">Car Information</h2>    
+    <div class="a2">
+        
+        <div class="a3">
+           
+            <table class="center">
+                <tr>
                 
         <tr>
             <td><label value="">Model</label></td>
             <td><input type="text"></td>
-        </tr><tr></tr><tr></tr><tr></tr>
+        </tr>
     
         <tr>       
             <td><label input="prize">Prize (rs.)</label></td>
             <td><input type="number"></td>
-        </tr><tr></tr><tr></tr><tr></tr>
+        </tr>
 
         </table><br>
-             <input type="reset">
-             <input type="submit">
+             
+                <input type="reset">
+                <input type="submit"><br>
+                  <button>
+                   <a href="button.htm">Sign-up</a>
+                </button>
+        </div>    
+              
+
+        <div class="a4">
+            <img src="/my_web.html/cartoon-removebg-preview.png" width="300px" height="300px">
+        </div>
+    </div>    
 </form>
 </body>
 </html>
